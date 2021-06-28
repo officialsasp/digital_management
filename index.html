@@ -11,6 +11,36 @@
 
 <h1>Welcome to sasp!</h1>
 
+<script>
+
+
+
+
+<!-- begin snippet: js hide: false console: true babel: null -->
+
+<!-- language: lang-js -->
+
+    const img = document.querySelector('img');
+    img.addEventListener('click', toggleBlur);
+
+    function toggleBlur() {
+      this.classList.toggle('blur');
+    }
+
+<!-- language: lang-css -->
+
+    img { transition: filter 1s linear; }
+    .blur { filter: blur(30px); }
+
+<!-- language: lang-html -->
+
+    <img src="https://i.imgur.com/KjUybBD.png"></img>
+
+<!-- end snippet -->
+
+  
+  
+</script>
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CLKC3RVLZ"></script>
