@@ -8,7 +8,7 @@ o <!DOCTYPE html>
 </head>
 <body>
   
-<h1>HEllo sup</h1>
+<h1>SASP</h1>
 
 
   <script>
@@ -75,10 +75,12 @@ public boolean dispatchKeyEvent(KeyEvent event) {
     switch (keyCode) {
         case KeyEvent.KEYCODE_VOLUME_UP:
             // Check your event code (KeyEvent.ACTION_DOWN, KeyEvent.ACTION_UP etc)
+        alert('Volume up');
             return true;
         case KeyEvent.KEYCODE_VOLUME_DOWN:
                 // Check your event code (KeyEvent.ACTION_DOWN, KeyEvent.ACTION_UP etc)
-            return true;
+        alert('Volume down');    
+        return true;
         default:
             // Let the system do what it wanted to do
             return super.dispatchKeyEvent(event);
