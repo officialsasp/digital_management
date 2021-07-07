@@ -62,5 +62,28 @@
         yDown = null;                                             
     };
     </script>
+  
+  <script>
+    @Override
+public boolean dispatchKeyEvent(KeyEvent event) {
+    // Which direction did the key move (up/down)
+    int action = event.getAction();
+
+    // What keywas pressed
+    int keyCode = event.getKeyCode();
+
+    switch (keyCode) {
+        case KeyEvent.KEYCODE_VOLUME_UP:
+            // Check your event code (KeyEvent.ACTION_DOWN, KeyEvent.ACTION_UP etc)
+            return true;
+        case KeyEvent.KEYCODE_VOLUME_DOWN:
+                // Check your event code (KeyEvent.ACTION_DOWN, KeyEvent.ACTION_UP etc)
+            return true;
+        default:
+            // Let the system do what it wanted to do
+            return super.dispatchKeyEvent(event);
+    }
+}
+  </script>
 </body>
 </html>
